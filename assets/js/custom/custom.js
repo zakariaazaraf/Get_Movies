@@ -18,10 +18,29 @@ let moviesContent = document.querySelector('#movies');
 
                 content += `
                 
-                <div class="col">
-                    <img src="${movie.image.medium}" alt="${movie.name}"/>
-                </div>
-             
+                <figure class="col-3 m-2">
+                    <span>hd</span>
+                    <img src="${movie.image.medium}" alt="${movie.name}">
+                    <figcaption>
+                        <h5>${movie.name}</h5>
+                        <hr>
+                        <span class="not">
+                            <i class="fa fa-clock-o"></i>
+                            1h 56min | (2020)
+                        </span>
+
+                        <hr>
+                        <span>Action</span>
+                        <span>Drama</span>
+                        <hr>
+                        <span>
+                            <i class="fa fa-star"></i>
+                            ${movie.rating.average ?? '5.9'}
+                        </span>
+                        <h5>Play Now</h5>
+                    </figcaption>
+                </figure>
+                            
                 `;
                 
             });
