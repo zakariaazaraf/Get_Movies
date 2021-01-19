@@ -18,7 +18,7 @@ let moviesContent = document.querySelector('#movies');
 
                 content += `
                 
-                <figure class="col-3 m-2">
+                <figure>
                     <span>hd</span>
                     <img src="${movie.image.medium}" alt="${movie.name}">
                     <figcaption>
